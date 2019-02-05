@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="/css/mdb.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <title>Welcome</title>
-<style>
-    #mdb-preloader{position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(255,255,255,0.2);z-index:9998;height:100%;width:100%}
-</style>
+{{--<style>--}}
+    {{--#mdb-preloader{position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(255,255,255,0.2);z-index:9998;height:100%;width:100%}--}}
+{{--</style>--}}
 </head>
 <body style="background-color: #F4F4F4;">
-<div id="mdb-preloader" class="flex-center">
-    <div id="preloader-markup">
-    </div>
-</div>
+{{--<div id="mdb-preloader" class="flex-center">--}}
+    {{--<div id="preloader-markup">--}}
+    {{--</div>--}}
+{{--</div>--}}
 <div id="app">
     <en-tete></en-tete>
     <main>
@@ -36,7 +36,6 @@
     <authentification-modal></authentification-modal>
     <pied></pied>
 </div>
-<div id="wait" style="display:none;width:69px;height:89px;border:1px solid black;position:absolute;top:50%;left:50%;padding:2px;"><img src='img/EATfJf4.gif' width="64" height="64" /><br>Loading..</div>
 <script src="/js/app.js"></script>
 <script>
     $('#cart-modal-ex').on('hidden.bs.modal', function (e) {
@@ -54,7 +53,7 @@
         },50);
     });
 </script>
-<script src="/js/preloading.js"></script>
+{{--<script src="/js/preloading.js"></script>--}}
 <script src="/js/mdb.min.js"></script>
 </body>
 
