@@ -13,7 +13,19 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Centre Accueil Polyvalent de Banka'),
+    /*
+    |--------------------------------------------------------------------------
+    | Application Email
+    |--------------------------------------------------------------------------
+    |
+    | This value is the email of your application. This value is used when the
+    | framework needs to place the application's email in a notification or
+    | any other location as required by the application or its packages.
+    |
+    */
+
+    'email' => env('APP_EMAIL', 'no-reply@capb.com'),
 
     /*
     |--------------------------------------------------------------------------
@@ -52,7 +64,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', 'http://localhost:8000'),
 
     'asset_url' => env('ASSET_URL', null),
 
