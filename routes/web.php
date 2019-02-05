@@ -12,5 +12,24 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('FrontOffice.welcome');
+})->name('accueil');
+
+Route::get('/gallery', function () {
+    return view('FrontOffice.gallery');
+})->name('gallery');
+
+Route::get('/Admin', function () {
+    return view('BackOffice.welcome');
+})->middleware('auth');
+
+Route::resource('salle','SalleController');
+Route::resource('chambre','ChambreController');
+Route::resource('reservation','ReservationController');
+Route::resource('message','MessageController');
+Route::resource('state','StateController')->middleware('auth');
+Route::resource('notification','NotificationController')->middleware('auth');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
