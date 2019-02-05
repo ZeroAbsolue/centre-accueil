@@ -14,32 +14,43 @@ class ChambresTableSeeder extends Seeder
 
         DB::table('chambres')->insert([
             'name' => 'CHAMBRE 101',
-            'area'=>'16*16'
+            'area'=>'16*16',
+            'description'=>'Not define'
         ]);
 
         DB::table('chambres')->insert([
             'name' => 'CHAMBRE 102',
-            'area'=>'16*16'
+            'area'=>'16*16',
+            'description'=>'Not define'
+
         ]);
 
         DB::table('chambres')->insert([
             'name' => 'CHAMBRE 103',
-            'area'=>'16*16'
+            'area'=>'16*16',
+            'description'=>'Not define'
+
         ]);
 
         DB::table('chambres')->insert([
             'name' => 'CHAMBRE 201',
-            'area'=>'16*16'
+            'area'=>'16*16',
+            'description'=>'Not define'
+
         ]);
 
         DB::table('chambres')->insert([
             'name' => 'CHAMBRE 202',
-            'area'=>'16*16'
+            'area'=>'16*16',
+            'description'=>'Not define'
+
         ]);
 
         DB::table('chambres')->insert([
             'name' => 'CHAMBRE 203',
-            'area'=>'16*16'
+            'area'=>'16*16',
+            'description'=>'Not define'
+
         ]);
     }
 }

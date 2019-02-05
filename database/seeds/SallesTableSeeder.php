@@ -17,6 +17,7 @@ class SallesTableSeeder extends Seeder
             "name"=>"SALLE DE CONFÉRENCE",
             "area"=>"25*15",
             "sitting_place"=>"200",
+            'description'=>'Not define',
         ]);
 
         DB::table('Salles')->insert([
@@ -24,6 +25,8 @@ class SallesTableSeeder extends Seeder
             "name"=>"SALLE DE FÊTE",
             "area"=>"15*50",
             "sitting_place"=>"300",
+            'description'=>'Not define'
+
         ]);
 
     }
