@@ -2,7 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0e19dce-5ae0-4aab-be04-09f2715618aa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/ChambreFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/ImageFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/SalleFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_01_02_193403_create_chambres_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_01_02_193903_create_salles_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_01_02_194601_create_images_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_01_12_063801_create_videos_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_01_13_231914_create_states_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_01_13_231946_create_reservations_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_01_18_200325_create_notifications_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_01_22_182047_create_messages_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_01_24_203009_create_roles_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_01_24_203658_create_role_users_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/ChambresTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/ImagesTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/RolesTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/SallesTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/StatesTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,10 +43,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
+        <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+            <state relative-caret-position="226">
+              <caret line="14" selection-start-line="14" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -40,6 +62,7 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
       </list>
     </option>
   </component>
@@ -159,18 +182,13 @@
             <path>
               <item name="centre_accueil" type="b2602c69:ProjectViewProjectNode" />
               <item name="centre_accueil" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="centre_accueil" type="b2602c69:ProjectViewProjectNode" />
               <item name="centre_accueil" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="centre_accueil" type="b2602c69:ProjectViewProjectNode" />
-              <item name="centre_accueil" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="seeds" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -188,8 +206,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="A:\PhpStormProjet\centre_accueil\public" />
       <recent name="A:\PhpStormProjet\centre_accueil\" />
+      <recent name="A:\PhpStormProjet\centre_accueil\public" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -221,12 +239,12 @@
       <option name="presentableId" value="Default" />
       <updated>1549268266873</updated>
       <workItem from="1549268271843" duration="2347000" />
-      <workItem from="1549369618526" duration="1949000" />
+      <workItem from="1549369618526" duration="2255000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4296000" />
+    <option name="totallyTimeSpent" value="4602000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -285,13 +303,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/style.css">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="14" selection-start-line="14" selection-end-line="20" />
         </state>
       </provider>
     </entry>
