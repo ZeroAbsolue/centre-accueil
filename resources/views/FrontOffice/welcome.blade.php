@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/mdb.min.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/png" href="/img/favicon.png"  />
     <title>Welcome</title>
 {{--<style>--}}
     {{--#mdb-preloader{position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(255,255,255,0.2);z-index:9998;height:100%;width:100%}--}}
