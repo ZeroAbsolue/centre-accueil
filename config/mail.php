@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'driver' => env('MAIL_DRIVER', 'smtp'),
+    'driver' => env('MAIL_DRIVER', 'mailgun'),
 
     /*
     |--------------------------------------------------------------------------
@@ -84,9 +84,9 @@ return [
     |
     */
 
-    'username' => env('MAIL_USERNAME','futurdeveloppeur0@gmail.com'),
+    'username' => env('MAIL_USERNAME','postmaster@sandboxc6de1a95641a40fa85343b92dda00cdb.mailgun.org'),
 
-    'password' => env('MAIL_PASSWORD','developpeur@00'),
+    'password' => env('MAIL_PASSWORD','ccb151ab25d6046a5a0715894b7fae92-b9c15f4c-ee76553c'),
 
     /*
     |--------------------------------------------------------------------------
