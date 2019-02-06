@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
             StatesTableSeeder::class,
             UsersTableSeeder::class,
             RolesTableSeeder::class,
+            RolesUsersTableSeeder::class
         ]);
     }
 }
