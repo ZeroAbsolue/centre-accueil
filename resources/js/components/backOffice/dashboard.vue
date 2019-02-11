@@ -475,6 +475,9 @@
             listOfDeletedReservation:function(newElement,lastElement){
                 this.updateOnWatch(newElement,5)
             },
+            listOfProcheReservation:function(newElement,lastElement){
+                this.updateOnWatch(newElement,7)
+            },
             numberOfUnValidatedReservation:function(newElement,lastElement){
                 if(newElement != lastElement){
                     this.nbreNonValider= newElement
@@ -580,10 +583,15 @@
             // Pagination function
 
             filterFor:function(numberOfDay,periode){
-                var today = new Date();
-                var startDay = new Date();
+                var today = new Date()
+                today.setHours(0,0,0,0)
+                var startDay = new Date()
+                startDay.setHours(0,0,0,0)
                 if(numberOfDay == -1){
                     this.periodReservation= this.listOfReservation;
+
+                }else if(numberOfDay == 0){
+                    this.periodReservation = JSON.parse(JSON.stringify(this.listOfReservation.filter(reservation=> (today.setHours(0,0,0,0) <= (new Date(reservation.created_at))) && ((new Date(reservation.created_at)) <= today.setHours(23,59,59,59) ))))
 
                 }else{
                     startDay.setDate(today.getDate()-numberOfDay);
@@ -616,6 +624,7 @@
             },
             updatePeriodeReservation:function(newElement){
                 if(newElement == 0){
+                    var today = new Date();
                     this.periodReservation = []
                     this.periodReservation = JSON.parse(JSON.stringify(this.listOfReservation))
                 }

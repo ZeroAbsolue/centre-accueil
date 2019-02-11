@@ -89,8 +89,11 @@ const getters = {
     listOfDeletedReservation:state=>{return getters.listOfReservation(state).filter(reservation=>reservation.state_id == 5)},
     listOfProcheReservation:state=>{
         var today = new Date()
-        return getters.listOfReservation(state).filter(reservation=>((new Date(reservation.started_at))  >= today) ||
-            ((new Date(reservation.started_at)).getDate()  == today.getDate()))
+        today.setHours(0,0,0,0)
+        var thatDay = new Date()
+        thatDay.setDate(today.getDate()+2)
+        return getters.listOfReservation(state).filter(reservation=>((new Date(reservation.started_at))  >= today) &&
+            ((new Date(reservation.started_at))  <= thatDay))
     },
 
     numberOfReservation:state=>{return getters.listOfReservation(state).length},

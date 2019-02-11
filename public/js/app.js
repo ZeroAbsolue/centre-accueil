@@ -2240,6 +2240,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     listOfDeletedReservation: function listOfDeletedReservation(newElement, lastElement) {
       this.updateOnWatch(newElement, 5);
     },
+    listOfProcheReservation: function listOfProcheReservation(newElement, lastElement) {
+      this.updateOnWatch(newElement, 7);
+    },
     numberOfUnValidatedReservation: function numberOfUnValidatedReservation(newElement, lastElement) {
       if (newElement != lastElement) {
         this.nbreNonValider = newElement; // this.pieChart()
@@ -2305,10 +2308,16 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     // Pagination function
     filterFor: function filterFor(numberOfDay, periode) {
       var today = new Date();
+      today.setHours(0, 0, 0, 0);
       var startDay = new Date();
+      startDay.setHours(0, 0, 0, 0);
 
       if (numberOfDay == -1) {
         this.periodReservation = this.listOfReservation;
+      } else if (numberOfDay == 0) {
+        this.periodReservation = JSON.parse(JSON.stringify(this.listOfReservation.filter(function (reservation) {
+          return today.setHours(0, 0, 0, 0) <= new Date(reservation.created_at) && new Date(reservation.created_at) <= today.setHours(23, 59, 59, 59);
+        })));
       } else {
         startDay.setDate(today.getDate() - numberOfDay);
         this.periodReservation = this.listOfReservation.filter(function (reservation) {
@@ -2342,6 +2351,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     },
     updatePeriodeReservation: function updatePeriodeReservation(newElement) {
       if (newElement == 0) {
+        var today = new Date();
         this.periodReservation = [];
         this.periodReservation = JSON.parse(JSON.stringify(this.listOfReservation));
       } else if (newElement == 1) {
@@ -96156,8 +96166,11 @@ var getters = {
   },
   listOfProcheReservation: function listOfProcheReservation(state) {
     var today = new Date();
+    today.setHours(0, 0, 0, 0);
+    var thatDay = new Date();
+    thatDay.setDate(today.getDate() + 2);
     return getters.listOfReservation(state).filter(function (reservation) {
-      return new Date(reservation.started_at) >= today || new Date(reservation.started_at).getDate() == today.getDate();
+      return new Date(reservation.started_at) >= today && new Date(reservation.started_at) <= thatDay;
     });
   },
   numberOfReservation: function numberOfReservation(state) {
